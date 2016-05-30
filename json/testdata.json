@@ -1,0 +1,218 @@
+[
+    {
+        "county": "DELTA",
+        "data_source": "U.S. Geological Survey (Data Provider)",
+        "date_time": "1999-09-30T00:00:00.000",
+        "div": "4",
+        "dwr_abbrev": "TRADITCO",
+        "http_linkage": "http://waterdata.usgs.gov/nwis/uv?384945107553401",
+        "station_name": "TRANSFER DITCH NEAR ECKERT, CO",
+        "station_status": "Active",
+        "station_type": "Stream",
+        "usgs_station_id": "384945107553401",
+        "variable": "DISCHRG",
+        "wd": "40"
+    },
+    {
+        "amount": "0.02",
+        "county": "CLEAR CREEK",
+        "data_source": "Co. Division of Water Resources",
+        "date_time": "2015-11-05T11:45:00.000",
+        "div": "1",
+        "dwr_abbrev": "CHIIDSCO",
+        "flag": "Ssn",
+        "http_linkage": "http://www.dwr.state.co.us/SurfaceWater/data/detail_graph.aspx?ID=CHIIDSCO&MTYPE=DISCHRG",
+        "stage": "0.02",
+        "station_name": "CHICAGO CREEK BELOW IDAHO SPRINGS RESERVOIR",
+        "station_status": "No gage height recorded, gage is closed for winter, seasonal site",
+        "station_type": "Stream",
+        "units": "CFS",
+        "usgs_station_id": "CHIIDSCO",
+        "utm_x": "447211",
+        "utm_y": "4388552",
+        "variable": "DISCHRG",
+        "wd": "7"
+    },
+    {
+        "amount": "103.00",
+        "county": "EL PASO",
+        "data_source": "U.S. Geological Survey (Data Provider)",
+        "date_time": "2015-07-31T08:30:00.000",
+        "div": "2",
+        "dwr_abbrev": "TURFORCO",
+        "http_linkage": "http://waterdata.usgs.gov/nwis/uv?07099225",
+        "station_name": "TURKEY CREEK BELOW HWY 115 AT FORT CARSON, CO",
+        "station_status": "Active",
+        "station_type": "Stream",
+        "units": "CFS",
+        "usgs_station_id": "07099225",
+        "utm_x": "515182.1",
+        "utm_y": "4263841.5",
+        "variable": "DISCHRG",
+        "wd": "10"
+    },
+    {
+        "amount": "0.00",
+        "county": "LOGAN",
+        "data_source": "Cooperative Program of CDWR, NCWCD & LSPWCD",
+        "date_time": "2016-05-21T22:00:00.000",
+        "div": "1",
+        "dwr_abbrev": "IPVDT2CO",
+        "http_linkage": "http://www.dwr.state.co.us/SurfaceWater/data/detail_graph.aspx?ID=IPVDT2CO&MTYPE=DISCHRG",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -103.00718,
+                40.77232
+            ]
+        },
+        "station_name": "ILLIFF PLATTE VALLEY DITCH BIFURCATION",
+        "station_status": "Active",
+        "station_type": "Diversion",
+        "units": "CFS",
+        "utm_x": "668180",
+        "utm_y": "4515393",
+        "variable": "DISCHRG",
+        "wd": "64"
+    },
+    {
+        "amount": "1230.00",
+        "county": "GUNNISON",
+        "data_source": "U.S. Geological Survey (Data Provider)",
+        "date_time": "2016-05-24T06:15:00.000",
+        "div": "4",
+        "dwr_abbrev": "EASCEMCO",
+        "http_linkage": "http://waterdata.usgs.gov/nwis/uv?09112200",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -106.870874,
+                38.78416
+            ]
+        },
+        "location_accuracy": "User supplied",
+        "station_name": "EAST RIVER BELOW CEMENT CREEK NEAR CRESTED BUTTE",
+        "station_status": "Active",
+        "station_type": "Stream",
+        "units": "CFS",
+        "usgs_station_id": "09112200",
+        "utm_x": "337500.4",
+        "utm_y": "4294487.1",
+        "variable": "DISCHRG",
+        "wd": "59"
+    },
+    {
+        "amount": "20.20",
+        "county": "JEFFERSON",
+        "data_source": "Co. Division of Water Resources",
+        "date_time": "2016-05-25T12:00:00.000",
+        "div": "1",
+        "dwr_abbrev": "RMTDITCO",
+        "http_linkage": "http://www.dwr.state.co.us/SurfaceWater/data/detail_graph.aspx?ID=RMTDITCO&MTYPE=DISCHRG",
+        "station_name": "ROCKY MOUNTAIN DITCH",
+        "station_status": "Active",
+        "station_type": "Diversion",
+        "units": "CFS",
+        "usgs_station_id": "0700652",
+        "utm_x": "483380",
+        "utm_y": "4402030",
+        "variable": "DISCHRG",
+        "wd": "7"
+    },
+    {
+        "amount": "0.01",
+        "county": "HUERFANO",
+        "data_source": "Co. Division of Water Resources",
+        "date_time": "2016-05-16T02:30:00.000",
+        "div": "2",
+        "dwr_abbrev": "LVRET2CO",
+        "http_linkage": "http://www.dwr.state.co.us/SurfaceWater/data/detail_graph.aspx?ID=LVRET2CO&MTYPE=DISCHRG",
+        "station_name": "LA VETA #2 RETURN FLOW",
+        "station_status": "Active",
+        "station_type": "Stream",
+        "units": "CFS",
+        "usgs_station_id": "LVRET2CO",
+        "utm_x": "526900",
+        "utm_y": "4168266",
+        "variable": "DISCHRG",
+        "wd": "16"
+    },
+    {
+        "amount": "12.03",
+        "county": "LARIMER",
+        "data_source": "Cooperative SDR Program of CDWR & NCWCD",
+        "date_time": "2016-05-24T23:00:00.000",
+        "div": "1",
+        "dwr_abbrev": "LACDITCO",
+        "http_linkage": "http://www.dwr.state.co.us/SurfaceWater/data/detail_graph.aspx?ID=LACDITCO&MTYPE=DISCHRG",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -105.185363,
+                40.656563
+            ]
+        },
+        "stage": "0.14",
+        "station_name": "LARIMER COUNTY DITCH",
+        "station_status": "Active",
+        "station_type": "Diversion",
+        "units": "CFS",
+        "usgs_station_id": "0300911",
+        "utm_x": "484330",
+        "utm_y": "4500650",
+        "variable": "DISCHRG",
+        "wd": "3"
+    },
+    {
+        "amount": "11.00",
+        "county": "BOULDER",
+        "data_source": "U.S. Geological Survey (Data Provider)",
+        "date_time": "2016-05-20T06:40:00.000",
+        "div": "1",
+        "dwr_abbrev": "FOUOROCO",
+        "http_linkage": "http://waterdata.usgs.gov/nwis/uv?06727500",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -105.32625,
+                40.018667
+            ]
+        },
+        "location_accuracy": "User supplied",
+        "station_name": "FOURMILE CREEK AT ORODELL, CO.",
+        "station_status": "Active",
+        "station_type": "Stream",
+        "units": "CFS",
+        "usgs_station_id": "06727500",
+        "utm_x": "472158.9",
+        "utm_y": "4429880",
+        "variable": "DISCHRG",
+        "wd": "6"
+    },
+    {
+        "amount": "0.00",
+        "county": "LARIMER",
+        "data_source": "Cooperative SDR Program of CDWR & NCWCD",
+        "date_time": "2016-05-25T12:00:00.000",
+        "div": "1",
+        "dwr_abbrev": "GERDITCO",
+        "http_linkage": "http://www.dwr.state.co.us/SurfaceWater/data/detail_graph.aspx?ID=GERDITCO&MTYPE=DISCHRG",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -105.179767,
+                40.417834
+            ]
+        },
+        "stage": "0.97",
+        "station_name": "GEORGE RIST DITCH",
+        "station_status": "Active",
+        "station_type": "Diversion",
+        "units": "CFS",
+        "usgs_station_id": "GERDITCO",
+        "utm_x": "484749",
+        "utm_y": "4474150",
+        "variable": "DISCHRG",
+        "wd": "4"
+    }
+]
