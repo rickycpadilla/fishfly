@@ -75,3 +75,17 @@ li {
   margin: 1em 0 0 -2em;
   padding: 0;
 }
+
+#lefty {
+  float: left;
+  width: 48vw;
+  height: 90vh;
+  overflow: scroll;
+}
+
+#map {
+  float: right;
+  width: 50vw;
+  height: 90vh;
+  position: fixed;
+}
