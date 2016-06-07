@@ -69,6 +69,37 @@ setTimeout(function(){
 
     }
   })
+  $( "#target" ).submit(function( event ) {
+    event.preventDefault();
+    var userLat = [];
+    var userLng = [];
+    var userInput = $("#destination").val();
+    var geocoder = new google.maps.Geocoder();
+    //search is a string, input by user (replace my address with user input)
+    geocoder.geocode({ 'address' : userInput }, function(results, status) {
+      if(status == "ZERO_RESULTS") {
+        //Indicate to user no location has been found
+        console.log("nope!");
+      } else {
+        //Do something with resulting location(s)
+        userLat.push(results[0].geometry.location.lat());
+        userLng.push(results[0].geometry.location.lng());
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: userLat[0], lng: userLng[0]},
+          zoom: 9
+        });
+        for (var i = 0; i < latsLongs.length; i++) {
+          new google.maps.Marker({
+            position: {lat: latsLongs[i][0], lng: latsLongs[i][1]},
+            map: map,
+            title: 'Hello World!'
+          });
+        }
+
+      }
+    })
+
+  });
 
 
 }, 1000);
