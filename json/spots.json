@@ -1,317 +1,362 @@
 [
   {
     "name": "Araknsas River - Leadville",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 100
+    "lat": 39.249,
+    "lng": -106.348111,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/100.jpg?alt=media&token=1df11703-5f38-40f1-9387-d30c667e68a0",
+    "id": 100,
+    "stationid": 7081200
   },
   {
     "name": "Arkansas River - Canyon City",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 101
+    "lat": 38.433887,
+    "lng": -105.25721,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/101.jpg?alt=media&token=a048b7ee-cc16-4fa8-96e3-a05c3982f0f0",
+    "id": 101,
+    "stationid": 7096000
   },
   {
     "name": "Arkansas River - Granite",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 102
+    "lat": 39.04277,
+    "lng": -106.265854,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/102.JPG?alt=media&token=af437e2a-0da2-4948-bbca-1155e584de28",
+    "id": 102,
+    "stationid": 7086000
   },
   {
     "name": "Arkansas River - Pueblo",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 103
+    "lat": 38.271671,
+    "lng": -104.718033,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/103.jpg?alt=media&token=277b3224-c071-489f-801f-c58b61664571",
+    "id": 103,
+    "stationid": 7099400
   },
   {
     "name": "Arkansas River - Salida",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 104
+    "lat": 38.54583,
+    "lng": -106.010567,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/104.jpg?alt=media&token=42321304-662e-4e7c-93b5-0f224dac1640",
+    "id": 104,
+    "stationid": 7091500
   },
   {
     "name": "Arkansas River - Wellsville",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 105
+    "lat": 38.502773,
+    "lng": -105.939735,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/105.JPG?alt=media&token=0b44b44a-7c70-47cc-87d4-2c62d1bfa6a4",
+    "id": 105,
+    "stationid": 7093700
   },
   {
     "name": "Big Thompson - Rocky Mountain National Park",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 106
+    "lat": 40.353873,
+    "lng": -105.584168,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/106.jpg?alt=media&token=b6e8814c-bada-4dbd-9884-1304b90e087d",
+    "id": 106,
+    "stationid": 402114105350101
   },
   {
     "name": "Big Thompson - At Canyon Mouth",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 107
+    "lat": 40.414900,
+    "lng": -105.251000,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/107.jpg?alt=media&token=25bb3a13-8f57-4da6-9a63-9f915741dc2b",
+    "id": 107,
+    "stationid": "BTABCMCO"
   },
   {
     "name": "Big Thompson - Below Lake Estes",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 108
+    "lat": 40.376373,
+    "lng": -105.485553,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/108.jpg?alt=media&token=71e446d2-a9ea-4172-af86-dba612ab1acb",
+    "id": 108,
+    "stationid": 6735500
   },
   {
     "name": "Blue River - Below Dillon Reservoir",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 109
+    "lat": 39.625542,
+    "lng": -106.066408,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/109.jpg?alt=media&token=442039cc-a174-46c4-a745-74b897bf0f90",
+    "id": 109,
+    "stationid": 9050700
   },
   {
     "name": "Blue River - Below Green Mountain Reservoir",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 110
+    "lat": 39.880264,
+    "lng": -106.333918,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/110.jpg?alt=media&token=fc3f09b3-432f-4a5f-8cbe-32f9a616c1b1",
+    "id": 110,
+    "stationid": 9057500
   },
   {
     "name": "Blue River - Breckenridge",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 111
+    "lat": 39.455821,
+    "lng": -106.031685,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/111.jpg?alt=media&token=95f8ad6a-5f47-4e56-a49b-8c618b73cf20",
+    "id": 111,
+    "stationid": 9046490
   },
   {
     "name": "Cache La Poudre River",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 112
+    "lat": 40.664425,
+    "lng": -105.224426,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/112.jpg?alt=media&token=49574262-43df-4cba-b15d-be22e761a59c",
+    "id": 112,
+    "stationid": 6752000
   },
   {
     "name": "Colorado River - Below Lake Granby",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 113
+    "lat": 40.144154,
+    "lng": -105.867233,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/113.jpg?alt=media&token=83f02763-e442-48da-a44d-c00b521ca76d",
+    "id": 113,
+    "stationid": 9019000
   },
   {
     "name": "Colorado River - Glenwood Springs",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 114
+    "lat": 39.554982,
+    "lng": -107.337554,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/114.jpg?alt=media&token=81d0e7f4-f06a-450b-95bb-922bbf71c056",
+    "id": 114,
+    "stationid": 9085100
   },
   {
     "name": "Colorado River - Kremmling",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 115
+    "lat": 40.036652,
+    "lng": -106.440032,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/115.jpg?alt=media&token=19aede8f-77f1-4dc2-aaed-1afff34cbf05",
+    "id": 115,
+    "stationid": 9058000
   },
   {
     "name": "Conejos River",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 116
+    "lat": 37.053902,
+    "lng": -106.187531,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/116.jpg?alt=media&token=4725b1ae-6e5f-48f9-a213-3c6261931d4e",
+    "id": 116,
+    "stationid": 8246500
   },
   {
     "name": "Conejos River - Upper",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 117
+    "lat": 37.355007,
+    "lng": -106.544205,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/117.jpg?alt=media&token=ef51f314-2646-40d1-b766-975630ff0244",
+    "id": 117,
+    "stationid": 8245000
   },
   {
-    "name": "Eagle River - Avon",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 118
+    "name": "Eagle River - Minturn",
+    "lat": 39.553875,
+    "lng": -106.402529,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/118.jpg?alt=media&token=9254eda1-bc3e-4703-b0ce-fe1a2a162154",
+    "id": 118,
+    "stationid": 9064600
   },
   {
-    "name": "Eagle River - Almont",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 119
+    "name": "East River - Almont",
+    "lat": 38.664437,
+    "lng": -106.848095,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/119.jpg?alt=media&token=800f0e5b-44b6-459e-8581-6ea06d1fd2dc",
+    "id": 119,
+    "stationid": 9112500
   },
   {
     "name": "Elk River",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 120
+    "lat": 40.514698,
+    "lng": -106.953941,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/120.jpg?alt=media&token=2fdd9bd1-72e8-4a0f-be76-5f6ab8356fd4",
+    "id": 120,
+    "stationid": 9242500
   },
   {
     "name": "Fryingpan River",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 121
+    "lat": 39.365541,
+    "lng": -106.825595,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/121.jpg?alt=media&token=f7f8e9dc-2102-4c13-9483-29c079185847",
+    "id": 121,
+    "stationid": 9080400
   },
   {
     "name": "Gunnison River",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 122
+    "lat": 38.541936,
+    "lng": -106.949766,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/122.jpg?alt=media&token=82edfd1d-5b1a-4c8e-8a5a-b6b7b9fd7fd8",
+    "id": 122,
+    "stationid": 9114500
   },
   {
     "name": "San Juan River - Pagosa Springs",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 123
+    "lat": 37.265528,
+    "lng": -107.011,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/123.jpg?alt=media&token=5b7dc60a-a5f1-415c-84fa-2b44cdfc887d",
+    "id": 123,
+    "stationid": 9342500
   },
   {
     "name": "North Platte River",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 124
+    "lat": 40.936639,
+    "lng": -106.339194,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/124.jpg?alt=media&token=742554de-e7bd-47bd-90d5-cbe110f14567",
+    "id": 124,
+    "stationid": 6620000
   },
   {
-    "name": "Rio Grande River - Above Del Norte",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 125
+    "name": "Rio Grande River - Del Norte",
+    "lat": 37.689449,
+    "lng": -106.461151,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/125.jpg?alt=media&token=28925abe-edb8-4068-a9b2-2519c28f25dc",
+    "id": 125,
+    "stationid": 8220000
   },
   {
     "name": "Rio Grande River - Creede",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 126
+    "lat": 37.774584,
+    "lng": -107.141277,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/126.jpg?alt=media&token=733b24c4-5f70-4369-8da8-0c7abe9e10c1",
+    "id": 126,
+    "stationid": "RIOBOXCO"
   },
   {
     "name": "Roaring Fork River - Aspen",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 127
+    "lat": 39.179988,
+    "lng": -106.801983,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/127.jpg?alt=media&token=dde5b78c-a3fb-4898-8204-ce838c8a9fd7",
+    "id": 127,
+    "stationid": 9073400
   },
   {
     "name": "Roaring Fork River - Glenwood Springs",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 128
+    "lat": 39.543593,
+    "lng": -107.329498,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/128.jpg?alt=media&token=bb3e6ed5-94ef-4ca2-bceb-5fa3e6957ac9",
+    "id": 128,
+    "stationid": 9085000
   },
   {
     "name": "South Platte River - Above Spinney Reservoir",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 129
+    "lat": 38.997492,
+    "lng": -105.681671,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/129.jpg?alt=media&token=323a66d4-8789-494a-a288-8632c59ce6c7",
+    "id": 129,
+    "stationid": 6694920
   },
   {
     "name": "South Platte River - Below Spinney Reservoir",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 130
+    "lat": 38.967492,
+    "lng": -105.58139,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/130.jpg?alt=media&token=4977c1dd-c111-4c43-a0b0-18c5a5984c72",
+    "id": 130,
+    "stationid": 6695000
   },
   {
     "name": "South Platte River - Cheesman Canyon",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 131
+    "lat": 39.162769,
+    "lng": -105.310273,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/131.jpg?alt=media&token=0a92766e-e698-4f0d-b1d8-144093796d02",
+    "id": 131,
+    "stationid": 6700000
   },
   {
     "name": "South Platte River - Deckers",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 132
+    "lat": 39.2547282,
+    "lng": -105.235693,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/132.jpg?alt=media&token=a2a3c57d-23db-4207-9d21-695a6d574c6d",
+    "id": 132,
+    "stationid": 6701500
   },
   {
     "name": "South Platte River - Elevemile Canyon",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 133
+    "lat": 38.90527,
+    "lng": -105.473328,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/133.JPG?alt=media&token=c1bd7049-655a-4a25-a107-2685df29fe42",
+    "id": 133,
+    "stationid": 6696000
   },
   {
     "name": "South Platte River - Middle Fork Alma",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 134
+    "lat": 39.352206,
+    "lng": -106.07058,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/134.JPG?alt=media&token=0dd6eed2-7eab-4f41-8717-f226cea2eed6",
+    "id": 134,
+    "stationid": ""
   },
   {
     "name": "South Platte River - Middle Fork Tomahawk",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 135
+    "lat": 39.017879,
+    "lng": -105.755518,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/135.jpg?alt=media&token=3530d1e8-c859-42f1-a12c-7115db73afd0",
+    "id": 135,
+    "stationid": ""
   },
   {
     "name": "South Platte River - North Fork Bailey",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 136
+    "lat": 39.388318,
+    "lng": -105.475282,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/136.JPG?alt=media&token=c33bc6c2-b128-4d43-b460-41df31c2f68f",
+    "id": 136,
+    "stationid": ""
   },
   {
     "name": "South Platte River - North Fork Pine",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 137
+    "lat": 39.404966,
+    "lng": -105.312065,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/137.jpg?alt=media&token=49b2af2f-0df8-4eef-b15f-a446d2ea16e1",
+    "id": 137,
+    "stationid": ""
   },
   {
     "name": "South Platte River - South Fork Below Antero",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 138
+    "lat": 38.993326,
+    "lng": -105.890017,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/138.jpg?alt=media&token=8bb37233-48e5-45f5-8323-ad97bc6cd496",
+    "id": 138,
+    "stationid": ""
   },
   {
     "name": "South Platte River - South Fork Weston Pass",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 139
+    "lat": 39.080120,
+    "lng": -106.137322,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/139.jpg?alt=media&token=8dd1984f-5dcb-492c-8be8-e17197ac6e0f",
+    "id": 139,
+    "stationid": ""
   },
   {
     "name": "Wild Cat Canyon",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 140
+    "lat": 39.058789,
+    "lng": -105.349027,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/140.jpg?alt=media&token=fc11d598-2155-4e03-ae08-1aa0c99e8f5b",
+    "id": 140,
+    "stationid": 6700000
   },
   {
     "name": "Taylor River",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 141
+    "lat": 38.860271,
+    "lng": -106.566697,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/141.jpg?alt=media&token=4b8baf71-3e3d-48bd-8f43-5fab13ab440d",
+    "id": 141,
+    "stationid": 9107000
   },
   {
     "name": "Williams Fork River",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 142
+    "lat": 40.0002,
+    "lng": -106.180367,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/142.jpg?alt=media&token=4cd28a14-2bd6-4d34-8f8c-a7670438ef50",
+    "id": 142,
+    "stationid": 9037500
   },
   {
     "name": "Yampa River - Below Stagecoach Reservoir",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 143
+    "lat": 40.285259,
+    "lng": -106.831435,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/143.jpg?alt=media&token=313e5f06-35e1-408d-bb15-942230f63184",
+    "id": 143,
+    "stationid": 9237500
   },
   {
     "name": "Yampa River - Steamboat Springs",
-    "lat": ,
-    "lng": ,
-    "img": "url",
-    "id": 144
+    "lat": 40.482986,
+    "lng": -106.832431,
+    "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/144.jpg?alt=media&token=dc4de203-7e83-486b-85d8-7fa187898d2f",
+    "id": 144,
+    "stationid": 9239500
   }
 ]
