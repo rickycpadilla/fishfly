@@ -29,14 +29,14 @@ li {
 
 #lefty {
   float: left;
-  width: 48vw;
+  width: 58vw;
   height: 90vh;
   overflow: scroll;
 }
 
 #map {
   float: right;
-  width: 50vw;
+  width: 40vw;
   height: 90vh;
   position: fixed;
 }
@@ -53,4 +53,9 @@ input {
   border: none;
   text-align: center;
   height: 20px;
+}
+
+.photo{
+  height: 200px;
+  width: 300px;
 }
