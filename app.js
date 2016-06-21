@@ -14,9 +14,9 @@ function getCFS(stationId){
 
 function getWeather(lat, lng){
   $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
-    var windSpeed = data.wind.speed + " MPH";
+    if(data.wind.speed){var windSpeed = data.wind.speed + " MPH";}
     // console.log(windSpeed);
-    var currentTemp = ((data.main.temp) * (9/5) - 459.67).toFixed(0) + " F";
+    if(data.main.temp){var currentTemp = ((data.main.temp) * (9/5) - 459.67).toFixed(0) + " F";}
     var weatherCond = data.weather[0].description;
     // console.log(currentTemp);
     // console.log(weatherCond);
@@ -40,12 +40,8 @@ function getBaseData() {
       getCFS(data[i].stationid);
       getWeather(data[i].lat, data[i].lng);
       makeMarkers(data[i].lat, data[i].lng)
-      //initMap(data[i].lat, data[i].lng);
     }
-  }).done(function(){
-    console.log("Something");
-
-    })
+  })
 };
 
 
@@ -71,6 +67,7 @@ function initMap(){
 }
 })
 getBaseData(  );
+// Why don't the markers load when first loading page? They load when submitting page 2 form.
 };
 
 $( "#target" ).submit(function( event ) {
