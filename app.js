@@ -1,3 +1,10 @@
+// TO DO NEXT (as of Tuesday June 21):
+// 1. Sort results based on distance from user input.
+// 2. Stylize result list.
+// 3. Add specific, additional info for each result - either separate page or lightbox.
+// 4. Link markers to additional info as well.
+// 5. Finish stylizing home page and results page.
+
 function getCFS(stationId, id){
   $.getJSON("https://data.colorado.gov/resource/a97x-8zfv.json", function( data ){
     for (var i = 0; i < data.length; i++){
@@ -84,7 +91,7 @@ function initMap(){
   userLng.push(results[0].geometry.location.lng());
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: userLat[0], lng: userLng[0]},
-    zoom: 10
+    zoom: 9
   });
   distance(userLat[0], userLng[0], 39.249, -106.348111)
 }
@@ -97,6 +104,7 @@ $(window).bind("load", function () {
 
 $( "#target" ).submit(function( event ) {
   event.preventDefault();
+  $("#datapage").html("");
   var userLat = [];
   var userLng = [];
   var userInput = $("#destination").val();
@@ -111,7 +119,7 @@ $( "#target" ).submit(function( event ) {
       userLng.push(results[0].geometry.location.lng());
       map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: userLat[0], lng: userLng[0]},
-        zoom: 10
+        zoom: 9
       });
     }
   })
