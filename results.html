@@ -14,7 +14,9 @@
       Find spots within [x miles]
       <!-- <input type="number" id="radius" placeholder="x miles"> -->
       of
-      <input type="text" id="destination" placeholder="location">
+      <input type="text" id="destination" value="">
+      <script>document.getElementById("destination").value = (window.location.search).replace("?location=", "")
+      </script>
     </form>
 <hr id="horzline">
 <div id="lefty">
