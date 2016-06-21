@@ -3,9 +3,11 @@
 // 2. No search capability
 
 function getBaseData(){
+  var arr = [];
   $.getJSON("https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/spots.json?alt=media&token=a8f6c4b7-2c78-410b-aeaa-70732c2122d2", function(data){
-    return data;
+    arr.push(data[0]);
   })
+  return arr;
 }
 
 function getCFS(stationId){
@@ -30,7 +32,12 @@ function getWeather(lat, lng){
   });
 };
 
-console.log(getBaseData());
+function getGoin(){
+  var baseData = getBaseData();
+  console.log(baseData);
+}
+
+getGoin()
 
 
 //////
