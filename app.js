@@ -9,7 +9,7 @@ function getCFS(stationId, id){
   $.getJSON("https://data.colorado.gov/resource/a97x-8zfv.json", function( data ){
     for (var i = 0; i < data.length; i++){
       if(data[i].usgs_station_id == stationId){
-        $("<p>CFS: " + data[i].amount + " </p>").appendTo("#div" + id);
+        $("<span>CFS: " + data[i].amount + " </span>").appendTo("#weath" + id);
       }
     }
   } )
@@ -18,14 +18,14 @@ function getCFS(stationId, id){
 function getWeather(lat, lng, id){
   $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
     var weatherCond = data.weather[0].description;
-    $("<h3>" + weatherCond + " </h3>").appendTo("#div" + id);
+    //$("<span>" + weatherCond + " </span>").appendTo("#weath" + id);
     if(data.wind.speed){
       var windSpeed = data.wind.speed + " MPH";
-      $("<p>Wind: " + windSpeed + " </p>").appendTo("#div" + id);
+      $("<span>Wind: " + windSpeed + " </span>").appendTo("#weath" + id);
     };
     if(data.main.temp){
       var currentTemp = ((data.main.temp) * (9/5) - 459.67).toFixed(0) + " F";
-      $("<p>Temp: " + currentTemp + " </p>").appendTo("#div" + id);
+      $("<span>Temp: " + currentTemp + " </span>").appendTo("#weath" + id);
     }
   });
 };
@@ -49,16 +49,17 @@ function markerMsg(marker, message) {
 }
 
 function getBaseData() {
-  $.getJSON( "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/spots.json?alt=media&token=a8f6c4b7-2c78-410b-aeaa-70732c2122d2", function(data){
+  $.getJSON( "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/spots.json?alt=media&token=3fc71264-588c-4bc6-a5e6-be2d968d8eb5", function(data){
     for(var i = 0; i<data.length; i++){
-      // console.log("****************");
-      // console.log(data[i].name);
-      $("<div id='div"+data[i].id+"'></div>").appendTo("#datapage");
+      $("<div style='position:relative' id='div"+data[i].id+"'></div>").appendTo("#datapage");
       getWeather(data[i].lat, data[i].lng, data[i].id);
       getCFS(data[i].stationid, data[i].id);
       var imgCode = $("<img src='" + data[i].img + "' class='photo'/>");
       imgCode.appendTo("#div" +data[i].id);
+      $("<div style='width: 100%; height: 60px; background-color: black; margin: -64px 0px 0px 0px; position: absolute; opacity: 0.6' class='blackbox'></div>").appendTo("#div" +data[i].id);
+      $("<div style='position:absolute; text-align:center; width: 100%; margin-top: -40px; color: white' id='weath" + data[i].id +"'></div>").appendTo("#div" +data[i].id);
       $("<h2 id='" + data[i].id +"'>" + data[i].name + " </h2>").appendTo("#div" +data[i].id);
+      $("<h4 id='" + data[i].id +"'>" + data[i].loc + " </h4>").appendTo("#div" +data[i].id);
       makeMarkers(data[i].lat, data[i].lng, data[i].name);
     }
   })

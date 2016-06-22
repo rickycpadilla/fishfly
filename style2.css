@@ -5,8 +5,26 @@ html {
 #logo {
   width: 120px;
   display: inline;
-  margin: 20px 20px 15px 20px;
+  margin: 19px 20px 15px 20px;
   float: left;
+}
+
+h2 {
+  font-family: sans-serif;
+  color: #4A4A4A;
+  font-size: 20px;
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+h4 {
+  font-family: sans-serif;
+  color: #9B9B9B;
+  font-size: 16px;
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
 }
 
 li {
@@ -57,6 +75,7 @@ form {
 .photo{
   height: 200px;
   width: 300px;
+  position: relative;
 }
 
 #destination {
@@ -66,9 +85,13 @@ form {
   text-align: left;
   outline: none;
   border: none;
+  width: 300px;
 }
 
 #glass {
   width: 20px;
   margin-right: 5px;
+}
+
+.blackbox{
 }
