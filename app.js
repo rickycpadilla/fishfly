@@ -9,7 +9,7 @@ function getCFS(stationId, id){
   $.getJSON("https://data.colorado.gov/resource/a97x-8zfv.json", function( data ){
     for (var i = 0; i < data.length; i++){
       if(data[i].usgs_station_id == stationId){
-        $("<span>CFS: " + data[i].amount + " </span>").appendTo("#weath" + id);
+        $("<span>FLOW: " + data[i].amount + " CFS</span>").appendTo("#rightw" + id);
       }
     }
   } )
@@ -17,16 +17,16 @@ function getCFS(stationId, id){
 
 function getWeather(lat, lng, id){
   $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
+    if(data.main.temp){
+      var currentTemp = ((data.main.temp) * (9/5) - 459.67).toFixed(0);
+      $("<span style='font-size: 36px;'>" + currentTemp + "&deg</span>").appendTo("#leftw" + id);
+    }
     var weatherCond = data.weather[0].description;
     //$("<span>" + weatherCond + " </span>").appendTo("#weath" + id);
     if(data.wind.speed){
       var windSpeed = data.wind.speed + " MPH";
-      $("<span>Wind: " + windSpeed + " </span>").appendTo("#weath" + id);
+      $("<span>WIND: " + windSpeed + " </span><br>").appendTo("#rightw" + id);
     };
-    if(data.main.temp){
-      var currentTemp = ((data.main.temp) * (9/5) - 459.67).toFixed(0) + " F";
-      $("<span>Temp: " + currentTemp + " </span>").appendTo("#weath" + id);
-    }
   });
 };
 
@@ -57,7 +57,9 @@ function getBaseData() {
       var imgCode = $("<img src='" + data[i].img + "' class='photo'/>");
       imgCode.appendTo("#div" +data[i].id);
       $("<div style='width: 100%; height: 60px; background-color: black; margin: -64px 0px 0px 0px; position: absolute; opacity: 0.6' class='blackbox'></div>").appendTo("#div" +data[i].id);
-      $("<div style='position:absolute; text-align:center; width: 100%; margin-top: -40px; color: white' id='weath" + data[i].id +"'></div>").appendTo("#div" +data[i].id);
+      $("<div style='position:absolute; width: 100%; margin-top: -60px; color: white' id='weath" + data[i].id +"'></div>").appendTo("#div" +data[i].id);
+      $("<div style='float: left;' id='leftw" + data[i].id + "'></div>").appendTo("#weath" + data[i].id);
+      $("<div style='float: left; font-size: 12px; font-weight: light;' id='rightw" + data[i].id + "'></div>").appendTo("#weath" + data[i].id);
       $("<h2 id='" + data[i].id +"'>" + data[i].name + " </h2>").appendTo("#div" +data[i].id);
       $("<h4 id='" + data[i].id +"'>" + data[i].loc + " </h4>").appendTo("#div" +data[i].id);
       makeMarkers(data[i].lat, data[i].lng, data[i].name);
