@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <title>Details
+    </title>
+
+  </head>
+
+  <body>
+    <a href="index.html"><img src="images/Logo-green.png" alt="logo" id="logo"/></a>
+    <!-- <img src="images/search.png" alt="search" id="glass"/> -->
+    <form id="target" autocomplete="off" action="results.html">
+      <img onclick="goBack()" src="images/left-arrow.png" alt="search" id="arrow"/>
+      <script>
+function goBack() {
+    window.history.back();
+}
+</script>
+      <input type="text" id="destination" spellcheck="false" name="location">
+      <script>
+        document.getElementById("destination").value = (window.location.search).replace(/2C\+|\+|\?|location|\=|\%20/g , " ").toUpperCase()
+      </script>
+    </form>
+    <hr id="horzline">
+    <div id="top">
+      <div id="blackbox"></div>
+      <div id="detailbox">
+        <div id="leftside">
+          <div id="name"></div>
+          <div id="loc"></div>
+        </div>
+        <div id="rightside">
+        </div>
+      </div>
+    </div>
+    <div id="bottom"></div>
+  </body>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbgYjdxWVT6_5SdZKBrauuv0-mHse6x2g&callback=initMap"async defer></script>
+  <script src="details.js"></script>
+</html>

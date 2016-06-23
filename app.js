@@ -63,7 +63,7 @@ function getBaseData() {
 
 // Original function below
     for(var i = 0; i<data.length; i++){
-      $("<div id='div"+data[i].id+"'></div>").appendTo("#datapage");
+      $("<a href='details.html?location=" + data[i].name+" "+data[i].loc + "'><div id='div"+data[i].id+"'></div></a>").appendTo("#datapage");
       getWeather(data[i].lat, data[i].lng, data[i].id);
       getCFS(data[i].stationid, data[i].id);
       var imgCode = $("<img src='" + data[i].img + "' class='photo'/>");
@@ -99,16 +99,14 @@ function initMap(){
       userLat = [];
       userLng = [];
   if(status == "ZERO_RESULTS") {
-    //Indicate to user no location has been found
-    console.log("nope!");
+    $("<h2 style='float: right'>Oops! Looks like you have a typo. Try again!</h2>").appendTo("#target");
   } else {
   userLat.push(results[0].geometry.location.lat());
   userLng.push(results[0].geometry.location.lng());
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: userLat[0], lng: userLng[0]},
-    zoom: 9
+    zoom: 8
   });
-  // distance(userLat[0], userLng[0], 39.249, -106.348111)
 }
 })
 };
@@ -116,27 +114,3 @@ function initMap(){
 $(window).bind("load", function () {
     getBaseData(  );
   });
-
-// $( "#target" ).submit(function( event ) {
-//   event.preventDefault();
-//   $("#datapage").html("");
-//   userLat = [];
-//   userLng = [];
-//   var userInput = $("#destination").val();
-//   var geocoder = new google.maps.Geocoder();
-//   geocoder.geocode({ 'address' : userInput }, function(results, status) {
-//     if(status == "ZERO_RESULTS") {
-//       //Indicate to user no location has been found
-//       console.log("nope!");
-//     } else {
-//       //Do something with resulting location(s)
-//       userLat.push(results[0].geometry.location.lat());
-//       userLng.push(results[0].geometry.location.lng());
-//       map = new google.maps.Map(document.getElementById('map'), {
-//         center: {lat: userLat[0], lng: userLng[0]},
-//         zoom: 9
-//       });
-//     }
-//   })
-//   getBaseData(  );
-// });
