@@ -53,6 +53,10 @@ li {
   overflow: scroll;
 }
 
+/*::-webkit-scrollbar {
+    display: none;
+}*/
+
 #lefty div {
   float: left;
   margin: 8px;
@@ -102,7 +106,7 @@ form {
 .blackbox{
 }
 
-@media screen and (max-width: 1035px) {
+@media screen and (max-width: 1038px) {
     #datapage div {
         width: 97%;
     }
