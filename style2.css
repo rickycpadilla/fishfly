@@ -55,7 +55,12 @@ li {
 
 #lefty div {
   float: left;
-  margin: 10px;
+  margin: 8px;
+}
+
+#datapage div {
+  position: relative;
+  width: 26vw;
 }
 
 #map {
@@ -75,7 +80,7 @@ form {
 
 .photo{
   height: 200px;
-  width: 300px;
+  width: 100%;
   position: relative;
 }
 
@@ -95,4 +100,28 @@ form {
 }
 
 .blackbox{
+}
+
+@media screen and (max-width: 1035px) {
+    #datapage div {
+        width: 97%;
+    }
+    .photo{
+      height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #map {
+        display: hidden;
+    }
+    #lefty {
+      width: 98vw;
+    }
+    /*.photo{
+      height: auto;
+    }*/
+    #destination {
+      width: 150px;
+    }
 }
