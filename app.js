@@ -9,7 +9,7 @@ function getCFS(stationId, id){
   $.getJSON("https://data.colorado.gov/resource/a97x-8zfv.json", function( data ){
     for (var i = 0; i < data.length; i++){
       if(data[i].usgs_station_id == stationId){
-        $("<span>FLOW: " + data[i].amount + " CFS</span>").appendTo("#rightw" + id);
+        $("<span>Flow: " + data[i].amount + " CFS</span>").appendTo("#rightw" + id);
       }
     }
   } )
@@ -21,13 +21,12 @@ function getWeather(lat, lng, id){
       var weatherCond = data.weather[0].description.replace(/ /g,"");
       var icon = $("<img src='/images/icons/" + weatherCond + ".png' style='width: 35px; margin-right:5px' class='icon'/>");
       icon.appendTo("#leftw" + id);
-      //$("<span>" + weatherCond + " </span>").appendTo("#weath" + id);
       var currentTemp = ((data.main.temp) * (9/5) - 459.67).toFixed(0);
       $("<span style='font-size: 36px;'>" + currentTemp + "&deg</span>").appendTo("#leftw" + id);
     }
     if(data.wind.speed){
       var windSpeed = data.wind.speed + " MPH";
-      $("<span>WIND: " + windSpeed + "</span><br>").appendTo("#rightw" + id);
+      $("<span>Wind: " + windSpeed + "</span><br>").appendTo("#rightw" + id);
     };
   });
 };
@@ -118,26 +117,26 @@ $(window).bind("load", function () {
     getBaseData(  );
   });
 
-$( "#target" ).submit(function( event ) {
-  event.preventDefault();
-  $("#datapage").html("");
-  userLat = [];
-  userLng = [];
-  var userInput = $("#destination").val();
-  var geocoder = new google.maps.Geocoder();
-  geocoder.geocode({ 'address' : userInput }, function(results, status) {
-    if(status == "ZERO_RESULTS") {
-      //Indicate to user no location has been found
-      console.log("nope!");
-    } else {
-      //Do something with resulting location(s)
-      userLat.push(results[0].geometry.location.lat());
-      userLng.push(results[0].geometry.location.lng());
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: userLat[0], lng: userLng[0]},
-        zoom: 9
-      });
-    }
-  })
-  getBaseData(  );
-});
+// $( "#target" ).submit(function( event ) {
+//   event.preventDefault();
+//   $("#datapage").html("");
+//   userLat = [];
+//   userLng = [];
+//   var userInput = $("#destination").val();
+//   var geocoder = new google.maps.Geocoder();
+//   geocoder.geocode({ 'address' : userInput }, function(results, status) {
+//     if(status == "ZERO_RESULTS") {
+//       //Indicate to user no location has been found
+//       console.log("nope!");
+//     } else {
+//       //Do something with resulting location(s)
+//       userLat.push(results[0].geometry.location.lat());
+//       userLng.push(results[0].geometry.location.lng());
+//       map = new google.maps.Map(document.getElementById('map'), {
+//         center: {lat: userLat[0], lng: userLng[0]},
+//         zoom: 9
+//       });
+//     }
+//   })
+//   getBaseData(  );
+// });

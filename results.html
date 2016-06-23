@@ -11,10 +11,11 @@
   <body>
     <a href="index.html"><img src="images/Logo-green.png" alt="logo" id="logo"/></a>
     <!-- <img src="images/search.png" alt="search" id="glass"/> -->
-    <form id="target">
+    <form id="target" autocomplete="off" action="results.html">
       <img src="images/search.png" alt="search" id="glass"/>
-      <input type="text" id="destination" value="">
-      <script>document.getElementById("destination").value = (window.location.search).replace("?location=", "")
+      <input type="text" id="destination" spellcheck="false" name="location">
+      <script>
+        document.getElementById("destination").value = (window.location.search).replace(/2C\+|\+|\?|location|\=|\%/g , " ").toUpperCase()
       </script>
     </form>
 <hr id="horzline">
