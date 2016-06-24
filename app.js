@@ -50,7 +50,7 @@ function markerMsg(marker, message) {
 }
 
 function getBaseData() {
-  $.getJSON( "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/spots.json?alt=media&token=3fc71264-588c-4bc6-a5e6-be2d968d8eb5", function(data){
+  $.getJSON( "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/spots.json?alt=media&token=85ba93cd-ec7a-4e13-9df3-cf4d4d2b921b", function(data){
 // adding distance comparisons
     for(var i=0; i<data.length; i++){
       var dist = distance(userLat, userLng, data[i].lat, data[i].lng);

@@ -6,7 +6,8 @@
     "lng": -106.348111,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/100.jpg?alt=media&token=1df11703-5f38-40f1-9387-d30c667e68a0",
     "id": 100,
-    "stationid": 7081200
+    "stationid": 7081200,
+    "description": "The Arkansas River below Leadville is one of the most heavily fished and popular sections.This section of the river, which is approximately 75 miles long, has beautiful pocket water, pools, riffles and runs holding an excellent population of browns and a good population of rainbows. The river averages from 70-100 feet wide in most areas with boulders, bends and deep seams creating superb habitat for the trout that reside here."
   },
   {
     "name": "Arkansas River",
@@ -15,7 +16,8 @@
     "lng": -105.25721,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/101.jpg?alt=media&token=a048b7ee-cc16-4fa8-96e3-a05c3982f0f0",
     "id": 101,
-    "stationid": 7096000
+    "stationid": 7096000,
+    "description": "The river through Canon City has been greatly enhanced recently with the addition of rock structures to provide better trout habitat. A pleasant hike and bike trail parallels the river from the 4th St. Bridge downstream for several miles. This can provide a nice option for a low commitment day of fishing. If you grow weary of chucking bugs you can pop into a restaurant for a meal. The usual Arkansas diet of stones and baetis nymphs should serve you well here. Hike in access to the river can be found just west of town for the more adventurous fisherman."
   },
   {
     "name": "Arkansas River",
@@ -24,7 +26,8 @@
     "lng": -106.265854,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/102.JPG?alt=media&token=af437e2a-0da2-4948-bbca-1155e584de28",
     "id": 102,
-    "stationid": 7086000
+    "stationid": 7086000,
+    "description": "As one travels downstream, the slower current velocity and grassy banks of Hayden Meadows are left behind for the bouldered pocket water of the Granite Gorge. Here one exchanges the cobblestone bars and shelf lines for a riverbed strewn with rocks of every size, creating rapids and eddies, shoreline pockets and deep plunge pools. Set astride the upper end of this canyon, from the Lake County line downstream to 1.5 miles below the Granite Bridge, the Granite State Wildlife Area provides public access above and beyond that afforded by the San Isabel National Forest. Most anglers do not wade far into this swifter, steeper current but rather rock-hop along the bank, working the shoreline habitat and seamlines where the predominant brown trout population primarily resides."
   },
   {
     "name": "Arkansas River",
@@ -33,7 +36,8 @@
     "lng": -104.718033,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/103.jpg?alt=media&token=277b3224-c071-489f-801f-c58b61664571",
     "id": 103,
-    "stationid": 7099400
+    "stationid": 7099400,
+    "description": "The Arkansas River below Pueblo Reservoir is an amazing winter tailwater fishery. Even though it is a tailwater, flows below the dam can get dangerously high during spring runoff, so be careful wading. This stretch of river is known for being a nice urban fly fishing destination. There is a public restroom at the parking area near Valco Ponds and the city of Pueblo is only a ten-minute drive away, with its full compliment of restaurants and stores. You'll need to purchase a parks pass in order to use the Valco Ponds parking lot."
   },
   {
     "name": "Arkansas River",
@@ -42,7 +46,8 @@
     "lng": -106.010567,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/104.jpg?alt=media&token=42321304-662e-4e7c-93b5-0f224dac1640",
     "id": 104,
-    "stationid": 7091500
+    "stationid": 7091500,
+    "description": "This section of the Arkansas River provides Gold Medal fly fishing for Brown and Rainbow trout. With 60 miles of river frontage on either side of Salida, you can always find your own spot to cast your line. Best fished before May 10th and the famous 'Mother's Day' hatch or after run-off ends sometime in early July. August 15th is also the date augmented flows for the rafting business end and the river returns to a lower flow."
   },
   {
     "name": "Arkansas River",
@@ -51,7 +56,8 @@
     "lng": -105.939735,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/105.JPG?alt=media&token=0b44b44a-7c70-47cc-87d4-2c62d1bfa6a4",
     "id": 105,
-    "stationid": 7093700
+    "stationid": 7093700,
+    "description": "Arkansas River between Howard and Parkdale is known as Bighorn Sheep Canyon. Most of this section is public and clearly marked, but it is still best to be sure you are fishing public water. The entire section runs along highway 50 on the southside of the river and railroad on the northside. This makes walk and wading dificult and a wading staff is strongly recomended.  The guaging station for this area is know a Wellsville."
   },
   {
     "name": "Big Thompson",
@@ -60,7 +66,8 @@
     "lng": -105.584168,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/106.jpg?alt=media&token=b6e8814c-bada-4dbd-9884-1304b90e087d",
     "id": 106,
-    "stationid": 402114105350101
+    "stationid": 402114105350101,
+    "description": "The Big Thompson River below Lake Estes holds panfish sized rainbows, cutthroat trout, and brown trout. The rainbows and cutts are stocked, and the browns are naturally reproducing. The best time of the year to throw dry flies starts around June and lasts until October. Fishing is catch and release flies and lures only."
   },
   {
     "name": "Big Thompson",
@@ -69,7 +76,8 @@
     "lng": -105.251000,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/107.jpg?alt=media&token=25bb3a13-8f57-4da6-9a63-9f915741dc2b",
     "id": 107,
-    "stationid": "BTABCMCO"
+    "stationid": "BTABCMCO",
+    "description": "The Big Thompson River below Lake Estes holds panfish sized rainbows, cutthroat trout, and brown trout. The rainbows and cutts are stocked, and the browns are naturally reproducing. The best time of the year to throw dry flies starts around June and lasts until October. Fishing is catch and release flies and lures only."
   },
   {
     "name": "Big Thompson",
@@ -78,7 +86,8 @@
     "lng": -105.485553,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/108.jpg?alt=media&token=71e446d2-a9ea-4172-af86-dba612ab1acb",
     "id": 108,
-    "stationid": 6735500
+    "stationid": 6735500,
+    "description": "The Big Thompson River below Lake Estes holds panfish sized rainbows, cutthroat trout, and brown trout. The rainbows and cutts are stocked, and the browns are naturally reproducing. The best time of the year to throw dry flies starts around June and lasts until October. Fishing is catch and release flies and lures only."
   },
   {
     "name": "Blue River",
@@ -87,7 +96,8 @@
     "lng": -106.066408,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/109.jpg?alt=media&token=442039cc-a174-46c4-a745-74b897bf0f90",
     "id": 109,
-    "stationid": 9050700
+    "stationid": 9050700,
+    "description": "This tailwater can be spectacular; however, low, summer flows (below 100 cfs) can lead to the river being overgrown with moss and almost unfishable. Walk and wade fishing is best with flows between 150 and 300 cfs. Flows over 300 cfs make it very dangerous to wade. When the flows are over 500 cfs, it is possible to float this stretch of river to the confluence of the Colorado River. The float is very technical and combined with long stretches of private water; this section of river should only be tackled by seasoned oarsmen."
   },
   {
     "name": "Blue River",
@@ -96,7 +106,8 @@
     "lng": -106.333918,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/110.jpg?alt=media&token=fc3f09b3-432f-4a5f-8cbe-32f9a616c1b1",
     "id": 110,
-    "stationid": 9057500
+    "stationid": 9057500,
+    "description": "Blue River access below Green Mountain Reservoir is very limited because a majority is privately owned. The river is public in the three-mile-long canyon below the dam; however, the access to this canyon can be quite strenuous and if snow-covered can be dangerous. We strongly recommend using rubber-soled wading boots with studs and always fishing with a partner to ensure safety. Please only attempt hiking this stretch if you are in good physical shape. There is no commercial guiding below Green Mountain Reservoir (wade or float), so only private trips are allowed on this stretch."
   },
   {
     "name": "Blue River",
@@ -105,7 +116,8 @@
     "lng": -106.031685,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/111.jpg?alt=media&token=95f8ad6a-5f47-4e56-a49b-8c618b73cf20",
     "id": 111,
-    "stationid": 9046490
+    "stationid": 9046490,
+    "description": "This tailwater can be spectacular; however, low, summer flows (below 100 cfs) can lead to the river being overgrown with moss and almost unfishable. Walk and wade fishing is best with flows between 150 and 300 cfs. Flows over 300 cfs make it very dangerous to wade. When the flows are over 500 cfs, it is possible to float this stretch of river to the confluence of the Colorado River. The float is very technical and combined with long stretches of private water; this section of river should only be tackled by seasoned oarsmen."
   },
   {
     "name": "Cache La Poudre River",
@@ -114,7 +126,8 @@
     "lng": -105.224426,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/112.jpg?alt=media&token=49574262-43df-4cba-b15d-be22e761a59c",
     "id": 112,
-    "stationid": 6752000
+    "stationid": 6752000,
+    "description": "The Cache La Poudre River is one of the last remaining freestone rivers on the front range. This river is flies and lures, catch and release only. There are plenty of campgrounds located along the river. The fish species are rainbow, brown, and cutthroat trout."
   },
   {
     "name": "Colorado River",
@@ -123,7 +136,8 @@
     "lng": -105.867233,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/113.jpg?alt=media&token=83f02763-e442-48da-a44d-c00b521ca76d",
     "id": 113,
-    "stationid": 9019000
+    "stationid": 9019000,
+    "description": "Description coming soon."
   },
   {
     "name": "Colorado River",
@@ -132,7 +146,8 @@
     "lng": -107.337554,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/114.jpg?alt=media&token=81d0e7f4-f06a-450b-95bb-922bbf71c056",
     "id": 114,
-    "stationid": 9085100
+    "stationid": 9085100,
+    "description": "Description coming soon."
   },
   {
     "name": "Colorado River",
@@ -141,7 +156,8 @@
     "lng": -106.440032,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/115.jpg?alt=media&token=19aede8f-77f1-4dc2-aaed-1afff34cbf05",
     "id": 115,
-    "stationid": 9058000
+    "stationid": 9058000,
+    "description": "Description coming soon."
   },
   {
     "name": "Conejos River",
@@ -150,7 +166,8 @@
     "lng": -106.187531,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/116.jpg?alt=media&token=4725b1ae-6e5f-48f9-a213-3c6261931d4e",
     "id": 116,
-    "stationid": 8246500
+    "stationid": 8246500,
+    "description": "This stretch of river below Platoro Reservoir holds larger fish than the headwaters and is mostly flies and lures only. Anglers brave enough to tackle a tough hike through Pinnacles Canyon are rewarded with trophy brown trout. The Conejos has a great stonefly hatch starting around June. In the afternoon/early evening there are great caddis hatches as well. Campground facilities are available along the river from Platoro all the way to Highway 285."
   },
   {
     "name": "Conejos River",
@@ -159,7 +176,8 @@
     "lng": -106.544205,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/117.jpg?alt=media&token=ef51f314-2646-40d1-b766-975630ff0244",
     "id": 117,
-    "stationid": 8245000
+    "stationid": 8245000,
+    "description": "This stretch of river below Platoro Reservoir holds larger fish than the headwaters and is mostly flies and lures only. Anglers brave enough to tackle a tough hike through Pinnacles Canyon are rewarded with trophy brown trout. The Conejos has a great stonefly hatch starting around June. In the afternoon/early evening there are great caddis hatches as well. Campground facilities are available along the river from Platoro all the way to Highway 285."
   },
   {
     "name": "Eagle River",
@@ -168,7 +186,8 @@
     "lng": -106.402529,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/118.jpg?alt=media&token=9254eda1-bc3e-4703-b0ce-fe1a2a162154",
     "id": 118,
-    "stationid": 9064600
+    "stationid": 9064600,
+    "description": "Description coming soon."
   },
   {
     "name": "East River",
@@ -177,7 +196,8 @@
     "lng": -106.848095,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/119.jpg?alt=media&token=800f0e5b-44b6-459e-8581-6ea06d1fd2dc",
     "id": 119,
-    "stationid": 9112500
+    "stationid": 9112500,
+    "description": "The East River around Almont is a freestone river and has great Kokanee Salmon fishing in the fall when they run up from Blue Mesa Reservoir to spawn. The East is also one of the most underrated trout fisheries in the state. With miles of fishing access above the town of Almont you can find complete solitude and great fishing. Watch your step because wading most freestone rivers can be treacherous, especially during runoff or high flows."
   },
   {
     "name": "Elk River",
@@ -186,7 +206,8 @@
     "lng": -106.953941,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/120.jpg?alt=media&token=2fdd9bd1-72e8-4a0f-be76-5f6ab8356fd4",
     "id": 120,
-    "stationid": 9242500
+    "stationid": 9242500,
+    "description": "Description coming soon."
   },
   {
     "name": "Fryingpan River",
@@ -195,7 +216,8 @@
     "lng": -106.825595,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/121.jpg?alt=media&token=f7f8e9dc-2102-4c13-9483-29c079185847",
     "id": 121,
-    "stationid": 9080400
+    "stationid": 9080400,
+    "description": "Description coming soon."
   },
   {
     "name": "Gunnison River",
@@ -204,7 +226,8 @@
     "lng": -106.949766,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/122.jpg?alt=media&token=82edfd1d-5b1a-4c8e-8a5a-b6b7b9fd7fd8",
     "id": 122,
-    "stationid": 9114500
+    "stationid": 9114500,
+    "description": "The Gunnison River near Gunnison: There is plenty of access on the Gunnison River from Almont through the town of Gunnison. There is good walk-and-wade fishing because of fishing easements though most anglers prefer to float the river because of its size. Be careful wading during high flows and watch for loose dirt and muddy banks. There is an excellent Kokanee run in the fall. The browns will follow the Kokanee out of Blue Mesa Reservoir as well, providing anglers with opportunities to land a trophy. The nearby college town of Gunnison has hotels, great restaurants, gas stations and convenience stores."
   },
   {
     "name": "San Juan River",
@@ -213,7 +236,8 @@
     "lng": -107.011,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/123.jpg?alt=media&token=5b7dc60a-a5f1-415c-84fa-2b44cdfc887d",
     "id": 123,
-    "stationid": 9342500
+    "stationid": 9342500,
+    "description": ""
   },
   {
     "name": "North Platte River",
@@ -222,7 +246,8 @@
     "lng": -106.339194,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/124.jpg?alt=media&token=742554de-e7bd-47bd-90d5-cbe110f14567",
     "id": 124,
-    "stationid": 6620000
+    "stationid": 6620000,
+    "description": "Description coming soon."
   },
   {
     "name": "Rio Grande River",
@@ -231,7 +256,8 @@
     "lng": -106.461151,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/125.jpg?alt=media&token=28925abe-edb8-4068-a9b2-2519c28f25dc",
     "id": 125,
-    "stationid": 8220000
+    "stationid": 8220000,
+    "description": "Description coming soon."
   },
   {
     "name": "Rio Grande River",
@@ -240,7 +266,8 @@
     "lng": -107.141277,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/126.jpg?alt=media&token=733b24c4-5f70-4369-8da8-0c7abe9e10c1",
     "id": 126,
-    "stationid": "RIOBOXCO"
+    "stationid": "RIOBOXCO",
+    "description": "The Rio Grande River at Creede is a great river to float. By late summer the flows on the Rio are low enough to make it a great walk-and-wade river. There is a huge population of brown trout with plenty of chances to land a trophy fish. The Rio is known for its epic Green Drake, Salmonfly, and Caddis hatches. Campgrounds are located at the Palisades and South Fork. Colorado Highway 149 runs along the Rio from the town of Creede downriver to Highway 160. Be sure you have a habitat stamp if you are going to fish in the Coller State Wildlife Area."
   },
   {
     "name": "Roaring Fork River",
@@ -249,7 +276,8 @@
     "lng": -106.801983,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/127.jpg?alt=media&token=dde5b78c-a3fb-4898-8204-ce838c8a9fd7",
     "id": 127,
-    "stationid": 9073400
+    "stationid": 9073400,
+    "description": "Description coming soon."
   },
   {
     "name": "Roaring Fork River",
@@ -258,7 +286,8 @@
     "lng": -107.329498,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/128.jpg?alt=media&token=bb3e6ed5-94ef-4ca2-bceb-5fa3e6957ac9",
     "id": 128,
-    "stationid": 9085000
+    "stationid": 9085000,
+    "description": "Description coming soon."
   },
   {
     "name": "South Platte River",
@@ -267,7 +296,8 @@
     "lng": -105.681671,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/129.jpg?alt=media&token=323a66d4-8789-494a-a288-8632c59ce6c7",
     "id": 129,
-    "stationid": 6694920
+    "stationid": 6694920,
+    "description": "The South Platte River above Spinney Reservoir is flies and lures only. Parking is found along County Rd. 59 above Spinney Reservoir with only limited access to restrooms and campgrounds. A habitat stamp is required to fish this area. Often overlooked because of its nearby 'big brother', the Dream Stream, this stretch of water offer feisty resident fish in the summer that will take a hopper fished tight to the bank under the right conditions. Fishing is best in the spring before runoff and in the fall starting around September and lasting through October. "
   },
   {
     "name": "South Platte River",
@@ -276,7 +306,8 @@
     "lng": -105.58139,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/130.jpg?alt=media&token=4977c1dd-c111-4c43-a0b0-18c5a5984c72",
     "id": 130,
-    "stationid": 6695000
+    "stationid": 6695000,
+    "description": "The South Platte River below Spinney Reservoir is known to most local anglers as the 'Dream Stream'. This tailwater doesn't have many holds over fish and is subject to high wind speeds and inclement weather. The spring and fall have been the Dream Stream's saving grace because of the spawns. Large rainbows and cutthroat trout move into the river in the spring, and Large browns and kokanee salmon move in in the fall. There is no camping available next to the river, however there are several great campgrounds downstream along Elevenmile Reservoir. There is a $7 parks pass fee to park in the last lot below Spinney."
   },
   {
     "name": "South Platte River",
@@ -285,7 +316,8 @@
     "lng": -105.310273,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/131.jpg?alt=media&token=0a92766e-e698-4f0d-b1d8-144093796d02",
     "id": 131,
-    "stationid": 6700000
+    "stationid": 6700000,
+    "description": "Cheesman Canyon is one of the most technical and rewarding tailwater fisheries in Colorado. A half hour hike from Gill trailhead through some hilly terrain gets you to the base of the canyon where the trail splits into a high road and low road. This stretch of the river is catch and release only and is known for holding large rainbows. Almost the entire length of the river that runs through this gorgeous boulder filled canyon is loaded with deep pocket water and fast runs that provide different challenges depending on where the fish are located. Most of the time the fish are hangin close to undercut boulders and other structure."
   },
   {
     "name": "South Platte River",
@@ -294,7 +326,8 @@
     "lng": -105.235693,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/132.jpg?alt=media&token=a2a3c57d-23db-4207-9d21-695a6d574c6d",
     "id": 132,
-    "stationid": 6701500
+    "stationid": 6701500,
+    "description": "When the fish aren't coming up to caddis, a tandem nymph rig with typical fare can still be deadly. The summer months can be a lot of fun for anglers that are into throwing streamers and big dry flies. Elk hair caddis, Amy's Ants, stimulators, and foam hoppers such as the streambank hopper are great dry flies to have. Good nymph patterns to carry are: Mercury Pheasant Tails, South Platte Brassies, San Juan Worms, Pat's Rubber Leg Stonefly, RS-2's, Murphy's Bubbleback Midge, Kleis' Mojo Midge, Cheesman Emergers, Buckskins, Top Secret Midges, Medallion Midges, and Black Beauties."
   },
   {
     "name": "South Platte River",
@@ -303,7 +336,8 @@
     "lng": -105.473328,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/133.JPG?alt=media&token=c1bd7049-655a-4a25-a107-2685df29fe42",
     "id": 133,
-    "stationid": 6696000
+    "stationid": 6696000,
+    "description": "Elevenmile Canyon is our local gem. Any seasoned angler will agree that the South Platte River in Elevenmile Canyon is the place to go for unparalleled beauty. Elevenmile Canyon is also the place to go if you just want to catch a fish. Per mile this stretch of river seems to consistently hold more fish than any other river within an hour's drive from Colorado Springs. It is the place to go where you stand the best chance to get into one of the various beautiful species of trout that call the South Platte River home."
   },
   {
     "name": "South Platte River",
@@ -312,7 +346,8 @@
     "lng": -106.07058,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/134.JPG?alt=media&token=0dd6eed2-7eab-4f41-8717-f226cea2eed6",
     "id": 134,
-    "stationid": ""
+    "stationid": "",
+    "description": "Middle Fork of the South Platte River finds its headwaters above Hoosier Pass. Water is diverted from the Breakenridge area and passed through a tunnel under Hoosier Pass into Montgomery Reservoir. This augments the flow particularly in the early summer."
   },
   {
     "name": "South Platte River",
@@ -321,7 +356,8 @@
     "lng": -105.755518,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/135.jpg?alt=media&token=3530d1e8-c859-42f1-a12c-7115db73afd0",
     "id": 135,
-    "stationid": ""
+    "stationid": "",
+    "description": "Tomahawk is the middle fork of the South Platte River. This stretch of the river is a great place to find solitude from the crowds. Summer and fall are a great time of the year to throw big hoppers to eager brown trout. In the summer, bring insect repellent because the mosquitos can get bad. In the fall, bring heavy leaders because large browns come out of their typical hiding spaces and up river from Spinney to spawn."
   },
   {
     "name": "South Platte River",
@@ -330,7 +366,8 @@
     "lng": -105.475282,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/136.JPG?alt=media&token=c33bc6c2-b128-4d43-b460-41df31c2f68f",
     "id": 136,
-    "stationid": ""
+    "stationid": "",
+    "description": "Description coming soon."
   },
   {
     "name": "South Platte River",
@@ -339,7 +376,8 @@
     "lng": -105.312065,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/137.jpg?alt=media&token=49b2af2f-0df8-4eef-b15f-a446d2ea16e1",
     "id": 137,
-    "stationid": ""
+    "stationid": "",
+    "description": "Description coming soon."
   },
   {
     "name": "South Platte River",
@@ -348,7 +386,8 @@
     "lng": -105.890017,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/138.jpg?alt=media&token=8bb37233-48e5-45f5-8323-ad97bc6cd496",
     "id": 138,
-    "stationid": ""
+    "stationid": "",
+    "description": "South Fork of the South Platte River below Antero Reservoir is a work in progress. Stream improvements were added in 2000 but the drought left this area with little water. Recently the DOW has been stocking this area. "
   },
   {
     "name": "South Platte River",
@@ -357,7 +396,8 @@
     "lng": -106.137322,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/139.jpg?alt=media&token=8dd1984f-5dcb-492c-8be8-e17197ac6e0f",
     "id": 139,
-    "stationid": ""
+    "stationid": "",
+    "description": "Weston Pass is the headwaters of the South Fork of the South Platte River. Named after the scenic break in the Mosquito Range, Weston Pass is an often-bypassed area adjacent to an often-bypassed Buffalo Peaks Wilderness area. It is a small stream and beaver pond delight with plenty of small brookies ready to take your dry fly. When you think about high mountain fishing you usually have to included a hiking trip that involves fishing, but in this case you can drive up for a day or car camp for a night.  This trip is all about easy access... to an extent."
   },
   {
     "name": "Wild Cat Canyon",
@@ -366,7 +406,8 @@
     "lng": -105.349027,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/140.jpg?alt=media&token=fc11d598-2155-4e03-ae08-1aa0c99e8f5b",
     "id": 140,
-    "stationid": 6700000
+    "stationid": 6700000,
+    "description": "Description coming soon."
   },
   {
     "name": "Taylor River",
@@ -375,7 +416,8 @@
     "lng": -106.566697,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/141.jpg?alt=media&token=4b8baf71-3e3d-48bd-8f43-5fab13ab440d",
     "id": 141,
-    "stationid": 9107000
+    "stationid": 9107000,
+    "description": "The Taylor River is known for having highly educated and tough to catch large rainbows and browns. The quarter-mile catch and release section is a great place to fish mysis shrimp and midge patterns. Those anglers brave enough to fish in extreme cold during the winter are rewarded with more solitude and ample opportunities to land a trophy fish. From June-October easy access is available over Cottonwood Pass or you can take the southern route through the town of Gunnison and then Almont via Highway 135 and then County Road 742."
   },
   {
     "name": "Williams Fork River",
@@ -384,7 +426,8 @@
     "lng": -106.180367,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/142.jpg?alt=media&token=4cd28a14-2bd6-4d34-8f8c-a7670438ef50",
     "id": 142,
-    "stationid": 9037500
+    "stationid": 9037500,
+    "description": "Description coming soon."
   },
   {
     "name": "Yampa River",
@@ -393,7 +436,8 @@
     "lng": -106.831435,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/143.jpg?alt=media&token=313e5f06-35e1-408d-bb15-942230f63184",
     "id": 143,
-    "stationid": 9237500
+    "stationid": 9237500,
+    "description": "Description coming soon."
   },
   {
     "name": "Yampa River",
@@ -402,6 +446,7 @@
     "lng": -106.832431,
     "img": "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/144.jpg?alt=media&token=dc4de203-7e83-486b-85d8-7fa187898d2f",
     "id": 144,
-    "stationid": 9239500
+    "stationid": 9239500,
+    "description": "Description coming soon."
   }
 ]

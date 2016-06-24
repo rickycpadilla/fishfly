@@ -60,12 +60,13 @@ function getWeather(lat, lng, id){
 // }
 
 function getBaseData() {
-  $.getJSON( "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/spots.json?alt=media&token=3fc71264-588c-4bc6-a5e6-be2d968d8eb5", function(data){
+  $.getJSON( "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/spots.json?alt=media&token=85ba93cd-ec7a-4e13-9df3-cf4d4d2b921b", function(data){
     for(var i=0; i<data.length; i++){
       if((data[i].name + " " + data[i].loc).toUpperCase() === $("#destination").val().trim()){
         $("#top").css("background", "url(" + data[i].img + ") no-repeat center center fixed");
         $("<h2 id='" + data[i].id +"'>" + data[i].name + " </h2>").appendTo("#name");
         $("<h4 id='" + data[i].id +"'>" + data[i].loc + " </h4>").appendTo("#loc");
+        $("<p>" + data[i].description + " </p>").appendTo("#about");
         getWeather(data[i].lat, data[i].lng, data[i].id);
         getCFS(data[i].stationid, data[i].id);
 
