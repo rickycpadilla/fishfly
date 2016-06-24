@@ -1,28 +1,45 @@
-// function getCFS(stationId, id){
-//   $.getJSON("https://data.colorado.gov/resource/a97x-8zfv.json", function( data ){
-//     for (var i = 0; i < data.length; i++){
-//       if(data[i].usgs_station_id == stationId){
-//         $("<span>Flow: " + data[i].amount + " CFS</span>").appendTo("#rightw" + id);
-//       }
-//     }
-//   } )
-// };
-//
-// function getWeather(lat, lng, id){
-//   $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
-//     if(data.main.temp){
-//       var weatherCond = data.weather[0].description.replace(/ /g,"");
-//       var icon = $("<img src='/images/icons/" + weatherCond + ".png' style='width: 35px; margin-right:5px' class='icon'/>");
-//       icon.appendTo("#leftw" + id);
-//       var currentTemp = ((data.main.temp) * (9/5) - 459.67).toFixed(0);
-//       $("<span style='font-size: 36px;'>" + currentTemp + "&deg</span>").appendTo("#leftw" + id);
-//     }
-//     if(data.wind.speed){
-//       var windSpeed = data.wind.speed + " MPH";
-//       $("<span>Wind: " + windSpeed + "</span><br>").appendTo("#rightw" + id);
-//     };
-//   });
-// };
+// Last Day
+// 1. Details page
+//  - Fix photos
+//  - Add weather and CFS
+//  - Add description
+//  - Add map with driving directions
+//  - Add forecast
+// 2. Results page
+//  - Make markers clickable, take to Details
+//  - If time, make hover over result highlight marker
+// 3. Home page
+//  - Stylize form
+//  - Add content under fold
+//    - Search all of colorado
+//    - Other stuff
+// 4. Deploy
+
+function getCFS(stationId, id){
+  $.getJSON("https://data.colorado.gov/resource/a97x-8zfv.json", function( data ){
+    for (var i = 0; i < data.length; i++){
+      if(data[i].usgs_station_id == stationId){
+        $("<span>Flow: " + data[i].amount + " CFS</span><br>").appendTo("#rightside2");
+      }
+    }
+  } )
+};
+
+function getWeather(lat, lng, id){
+  $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
+    if(data.main.temp){
+      var weatherCond = data.weather[0].description.replace(/ /g,"");
+      var icon = $("<img src='/images/icons/" + weatherCond + ".png' style='width: 35px; margin-right:5px' class='icon'/>");
+      icon.appendTo("#rightside");
+      var currentTemp = ((data.main.temp) * (9/5) - 459.67).toFixed(0);
+      $("<span style='font-size: 36px;'>" + currentTemp + "&deg</span>").appendTo("#rightside");
+    }
+    if(data.wind.speed){
+      var windSpeed = data.wind.speed + " MPH";
+      $("<span>Wind: " + windSpeed + "</span><br>").appendTo("#rightside2");
+    };
+  });
+};
 //
 // function makeMarkers(lat, lng, name){
 //     var marker = new google.maps.Marker({
@@ -46,12 +63,12 @@ function getBaseData() {
   $.getJSON( "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/spots.json?alt=media&token=3fc71264-588c-4bc6-a5e6-be2d968d8eb5", function(data){
     for(var i=0; i<data.length; i++){
       if((data[i].name + " " + data[i].loc).toUpperCase() === $("#destination").val().trim()){
-        // detailPage(data[i].img);
-        // console.log(data[i].img);
-        // $("#top").css("background", ("url(" + data[i].img + ") no-repeat center center fixed;"))
         $("#top").css("background", "url(" + data[i].img + ") no-repeat center center fixed");
         $("<h2 id='" + data[i].id +"'>" + data[i].name + " </h2>").appendTo("#name");
         $("<h4 id='" + data[i].id +"'>" + data[i].loc + " </h4>").appendTo("#loc");
+        getWeather(data[i].lat, data[i].lng, data[i].id);
+        getCFS(data[i].stationid, data[i].id);
+
         break
       }
     }
