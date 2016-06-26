@@ -16,7 +16,7 @@ function getCFS(stationId, id){
 };
 
 function getWeather(lat, lng, id){
-  $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
+  $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
     if(data.main.temp){
       var weatherCond = data.weather[0].description.replace(/ /g,"");
       var icon = $("<img src='/images/icons/" + weatherCond + ".png' style='width: 35px; margin-right:5px' class='icon'/>");

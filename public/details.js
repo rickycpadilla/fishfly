@@ -26,7 +26,7 @@ function getCFS(stationId, id){
 };
 
 function getWeather(lat, lng, id){
-  $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
+  $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
     if(data.main.temp){
       var weatherCond = data.weather[0].description.replace(/ /g,"");
       var icon = $("<img src='/images/icons/" + weatherCond + ".png' style='width: 35px; margin-right:5px' class='icon'/>");
@@ -39,7 +39,7 @@ function getWeather(lat, lng, id){
       $("<span>Wind: " + windSpeed + "</span><br>").appendTo("#rightside2");
     };
   });
-    $.getJSON("http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe&cnt=7", function(data){
+    $.getJSON("https://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe&cnt=7", function(data){
       for(var i=0; i<data.list.length; i++){
         var today = new Date(data.list[i].dt * 1000);
         var low = ((data.list[i].temp.min)* (9/5) - 459.67).toFixed(0);
