@@ -47,12 +47,31 @@ html {
   margin-left: -8px;
 }
 
-.in {
+#oneInput {
   display: inline;
   opacity: 0.9;
   background: #FFFFFF;
-  border-radius: 4px;
-  line-height: 20px;
+  line-height: 35px;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  margin-right: -2px;
+}
+
+#button {
+  display: inline;
+  opacity: 0.9;
+  background: #A1D865;
+  color: white;
+  line-height: 35px;
+  font-size: 17px;
+  border: none;
+  padding: 1px 30px 1px 20px;
+  margin-left: -2px;
+}
+
+#button:hover{
+  background: #CBF79B;
 }
 
 form {
@@ -60,11 +79,32 @@ form {
   padding-bottom: 30px;
 }
 
-.underfold {
+#underfold {
   width: 102%;
-  height: 800px;
   background-color: #f5f5f5;
   text-align: center;
   margin-top:0px;
   margin-left: -8px;
+  padding-top: 30px;
+}
+
+h3 {
+  margin: 0;
+  font-family: sans-serif;
+  color: gray;
+}
+
+h5 {
+  margin-bottom: 0px;
+}
+
+a {
+  font-family: sans-serif;
+  color: #75AF35;
+  text-decoration: none;
+}
+
+#usa{
+  max-width: 400px;
+  margin-bottom: 50px;
 }

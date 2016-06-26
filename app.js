@@ -139,6 +139,10 @@ function initMap(){
 })
 };
 
+$(window).bind("load", function () {
+  getBaseData(  );
+});
+
 var styles = [
   {"featureType":"administrative",
     "elementType":"labels.text.fill",
@@ -173,7 +177,3 @@ var styles = [
     "stylers":[{"color":"#A4DDF5"}, {"visibility":"on"}]
   }
 ];
-
-$(window).bind("load", function () {
-    getBaseData(  );
-  });

@@ -10,21 +10,25 @@
   <body>
 <img src="images/logo2-fishfly.png" alt="logo" id="logo"/>
 <p id="headline">FISH WHERE THE FISH ARE</p>
-<p id="subline">Find the best place to flyfish near you.</p>
+<p id="subline">Find the best places to flyfish.</p>
 
 <div id="searchbar">
 
   <form action="results.html" method="GET" autocomplete="off">
 
-          <input type="text" id="oneInput" class="in" name="location" placeholder="Enter Current Location" spellcheck="false">
+          <input type="text" id="oneInput" name="location" placeholder=" Where to?" spellcheck="false">
           <!-- <input type="text" class="in" placeholder="Miles Willing to Travel"> -->
 
-          <input type="submit" value="submit">
+          <input type="submit" id="button" value="Search">
   </form>
+</div>
+<div id="underfold">
+  <h3>Currently Serving:</h3>
+  <a href="/results.html?location=colorado"><h5>Colorado</h5></a>
+  <a href="/results.html?location=colorado"><img src="/images/usa.png" alt="colorado_fishing" id="usa" /></a>
 </div>
 
 
 
   </body>
-  <!-- <script src="app.js"></script> -->
 </html>
