@@ -16,16 +16,20 @@ function getCFS(stationId, id){
 };
 
 function getWeather(lat, lng, id){
-  $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
-    if(data.main.temp){
-      var weatherCond = data.weather[0].description.replace(/ /g,"");
-      var icon = $("<img src='/images/icons/" + weatherCond + ".png' style='width: 35px; margin-right:5px' class='icon'/>");
+  $.getJSON("https://api.forecast.io/forecast/67e7df6d2acc0806d8ecb50f3f040be8/" + lat + "," + lng, function(data){
+    console.log(data);
+    if(data.currently.apparentTemperature){
+      var weatherCond = data.currently.icon;
+      console.log(weatherCond);
+      var icon = $("<img src='images/icons/" + weatherCond + ".png' style='width: 35px; margin-right:5px' class='icon'/>");
       icon.appendTo("#leftw" + id);
-      var currentTemp = ((data.main.temp) * (9/5) - 459.67).toFixed(0);
+      var currentTemp = data.currently.apparentTemperature.toFixed(0);
+      console.log(currentTemp);
       $("<span style='font-size: 36px;'>" + currentTemp + "&deg</span>").appendTo("#leftw" + id);
     }
-    if(data.wind.speed){
-      var windSpeed = data.wind.speed + " MPH";
+    if(data.currently.windSpeed){
+      var windSpeed = data.currently.windSpeed + " MPH";
+      console.log(windSpeed);
       $("<span>Wind: " + windSpeed + "</span><br>").appendTo("#rightw" + id);
     };
   });

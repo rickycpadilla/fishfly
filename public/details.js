@@ -26,37 +26,38 @@ function getCFS(stationId, id){
 };
 
 function getWeather(lat, lng, id){
-  $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe", function(data){
-    if(data.main.temp){
-      var weatherCond = data.weather[0].description.replace(/ /g,"");
-      var icon = $("<img src='/images/icons/" + weatherCond + ".png' style='width: 35px; margin-right:5px' class='icon'/>");
+  $.getJSON("https://api.forecast.io/forecast/67e7df6d2acc0806d8ecb50f3f040be8/" + lat + "," + lng, function(data){
+    if(data.currently.apparentTemperature){
+      var weatherCond = data.currently.icon;
+      var icon = $("<img src='images/icons/" + weatherCond + ".png' style='width: 35px; margin-right:5px' class='icon'/>");
       icon.appendTo("#rightside");
-      var currentTemp = ((data.main.temp) * (9/5) - 459.67).toFixed(0);
+      var currentTemp = data.currently.apparentTemperature.toFixed(0);
       $("<span style='font-size: 36px;'>" + currentTemp + "&deg</span>").appendTo("#rightside");
     }
-    if(data.wind.speed){
-      var windSpeed = data.wind.speed + " MPH";
+    if(data.currently.windSpeed){
+      var windSpeed = data.currently.windSpeed + " MPH";
       $("<span>Wind: " + windSpeed + "</span><br>").appendTo("#rightside2");
     };
   });
-    $.getJSON("https://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe&cnt=7", function(data){
-      for(var i=0; i<data.list.length; i++){
-        var today = new Date(data.list[i].dt * 1000);
-        var low = ((data.list[i].temp.min)* (9/5) - 459.67).toFixed(0);
-        var high = ((data.list[i].temp.max)* (9/5) - 459.67).toFixed(0);
-        var weatherCond = data.list[i].weather[0].description.replace(/ /g,"");
-        var icon = $("<img src='/images/darkicons/" + weatherCond + ".png' style='width: 25px; margin: 0px 10px 25px 0px;' class='icon'/>");
-        var windSpeed =  data.list[i].speed;
-        $("<div style='font-size: 12px' id='main" + i + "'></div>").appendTo("#forecast");
-        $("<div style='display: inline-block' id='l" + i + "'></div>").appendTo("#main"+i);
-        $("<div style='display: inline-block' id='r" + i + "'></div>").appendTo("#main"+i);
-        $("<span style='font-weight: bold'>" + today.toString().substring(0, 10) + "</span><br>").appendTo("#r" + i);
-        icon.appendTo("#l" + i);
-        $("<span>Low: " + low + "&deg </span>").appendTo("#r" + i);
-        $("<span>High: " + high + "&deg</span><br>").appendTo("#r" + i);
-        $("<span>Wind: " + windSpeed + " MPH</span><br><br>").appendTo("#r" + i);
-      }
-    })
+  $.getJSON("https://api.forecast.io/forecast/67e7df6d2acc0806d8ecb50f3f040be8/" + lat + "," + lng, function(data){
+    for(var i=1; i<data.daily.data.length; i++){
+      var today = new Date(data.daily.data[i].time * 1000);
+      var low = (data.daily.data[i].apparentTemperatureMax).toFixed(0);
+      var high = (data.daily.data[i].apparentTemperatureMin).toFixed(0);
+      var weatherCond = data.currently.icon;
+      console.log(weatherCond);
+      var icon = $("<img src='images/darkicons/" + weatherCond + ".png' style='width: 25px; margin: 0px 10px 25px 0px;' class='icon'/>");
+      var windSpeed =  data.currently.windSpeed
+      $("<div style='font-size: 12px' id='main" + i + "'></div>").appendTo("#forecast");
+      $("<div style='display: inline-block' id='l" + i + "'></div>").appendTo("#main"+i);
+      $("<div style='display: inline-block' id='r" + i + "'></div>").appendTo("#main"+i);
+      $("<span style='font-weight: bold'>" + today.toString().substring(0, 10) + "</span><br>").appendTo("#r" + i);
+      icon.appendTo("#l" + i);
+      $("<span>Low: " + low + "&deg </span>").appendTo("#r" + i);
+      $("<span>High: " + high + "&deg</span><br>").appendTo("#r" + i);
+      $("<span>Wind: " + windSpeed + " MPH</span><br><br>").appendTo("#r" + i);
+    }
+  })
 };
 
 //
