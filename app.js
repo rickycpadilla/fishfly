@@ -31,22 +31,42 @@ function getWeather(lat, lng, id){
   });
 };
 
-function makeMarkers(lat, lng, name){
+function makeMarkers(lat, lng, name, id){
+  var icon = {
+    url: "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/marker.png?alt=media&token=f07ed884-1ae9-457b-b01e-14ee14fd6842",
+    scaledSize: new google.maps.Size(20, 30), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor
+  };
     var marker = new google.maps.Marker({
       position: {lat: lat, lng: lng},
       map: map,
+      icon: icon,
       title: 'Hello World!'
   });
-  markerMsg(marker, name);
+  markerMsg(marker, name, id);
 };
 
-function markerMsg(marker, message) {
+function markerMsg(marker, message, id) {
   var infowindow = new google.maps.InfoWindow({
     content: message
   });
-  marker.addListener('click', function() {
+  marker.addListener('mouseover', function() {
     infowindow.open(marker.get('map'), marker);
+    // $("#div" + id).css("opacity", "0.9");
+    $(".card:not(#div"+ id +")").css("opacity", "0.4");
   });
+  marker.addListener('mouseout', function() {
+    infowindow.close(marker.get('map'), marker);
+    $(".card").css("opacity", "1");
+  });
+  $("#div" + id).hover(function(){
+    infowindow.open(marker.get('map'), marker)
+  },
+  function(){
+    infowindow.close(marker.get('map'), marker)
+  }
+  );
 }
 
 function getBaseData() {
@@ -63,7 +83,7 @@ function getBaseData() {
 
 // Original function below
     for(var i = 0; i<data.length; i++){
-      $("<a href='details.html?location=" + data[i].name+" "+data[i].loc + "'><div id='div"+data[i].id+"'></div></a>").appendTo("#datapage");
+      $("<a href='details.html?location=" + data[i].name+" "+data[i].loc + "'><div id='div"+data[i].id+"' class='card'></div></a>").appendTo("#datapage");
       getWeather(data[i].lat, data[i].lng, data[i].id);
       getCFS(data[i].stationid, data[i].id);
       var imgCode = $("<img src='" + data[i].img + "' class='photo'/>");
@@ -74,7 +94,7 @@ function getBaseData() {
       $("<div style='float: right; width: 116px; font-size: 12px; font-weight: light; padding-top: 5px; margin-right:30px; text-align: right' id='rightw" + data[i].id + "'></div>").appendTo("#weath" + data[i].id);
       $("<h2 id='" + data[i].id +"'>" + data[i].name + " </h2>").appendTo("#div" +data[i].id);
       $("<h4 id='" + data[i].id +"'>" + data[i].loc + " </h4>").appendTo("#div" +data[i].id);
-      makeMarkers(data[i].lat, data[i].lng, data[i].name);
+      makeMarkers(data[i].lat, data[i].lng, data[i].name, data[i].id);
     }
   })
 };
@@ -105,11 +125,49 @@ function initMap(){
   userLng.push(results[0].geometry.location.lng());
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: userLat[0], lng: userLng[0]},
-    zoom: 8
+    zoom: 9,
+    disableDefaultUI: true,
+    zoomControl: true
   });
+  map.setOptions({styles: styles});
 }
 })
 };
+
+var styles = [
+  {"featureType":"administrative",
+    "elementType":"labels.text.fill",
+    "stylers":[{"color":"#444444"}]
+  },
+  {"featureType":"landscape",
+    "elementType":"all",
+    "stylers":[{"color":"#f5f5f5"}]
+  },
+  {"featureType":"poi",
+    "elementType":"all",
+    "stylers":[{"visibility":"off"}]
+  },
+  {"featureType":"road",
+    "elementType":"all",
+    "stylers":[{"saturation":-100},{"lightness":45}]
+  },
+  {"featureType":"road.highway",
+    "elementType":"all",
+    "stylers":[{"visibility":"simplified"}]
+  },
+  {"featureType":"road.arterial",
+    "elementType":"labels.icon",
+    "stylers":[{"visibility":"off"}]
+  },
+  {"featureType":"transit",
+    "elementType":"all",
+    "stylers":[{"visibility":"off"}]
+  },
+  {"featureType":"water",
+    "elementType":"all",
+    "stylers":[{"color":"#A4DDF5"}, {"visibility":"on"}]
+  }
+];
 
 $(window).bind("load", function () {
     getBaseData(  );

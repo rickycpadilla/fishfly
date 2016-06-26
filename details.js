@@ -39,16 +39,41 @@ function getWeather(lat, lng, id){
       $("<span>Wind: " + windSpeed + "</span><br>").appendTo("#rightside2");
     };
   });
+    $.getJSON("http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lng + "&APPID=4756af9614c9971a6c4c4b17ef4630fe&cnt=7", function(data){
+      for(var i=0; i<data.list.length; i++){
+        var today = new Date(data.list[i].dt * 1000);
+        var low = ((data.list[i].temp.min)* (9/5) - 459.67).toFixed(0);
+        var high = ((data.list[i].temp.max)* (9/5) - 459.67).toFixed(0);
+        var weatherCond = data.list[i].weather[0].description.replace(/ /g,"");
+        var icon = $("<img src='/images/darkicons/" + weatherCond + ".png' style='width: 25px; margin: 0px 10px 25px 0px;' class='icon'/>");
+        var windSpeed =  data.list[i].speed;
+        $("<div style='font-size: 12px' id='main" + i + "'></div>").appendTo("#forecast");
+        $("<div style='display: inline-block' id='l" + i + "'></div>").appendTo("#main"+i);
+        $("<div style='display: inline-block' id='r" + i + "'></div>").appendTo("#main"+i);
+        $("<span style='font-weight: bold'>" + today.toString().substring(0, 10) + "</span><br>").appendTo("#r" + i);
+        icon.appendTo("#l" + i);
+        $("<span>Low: " + low + "&deg </span>").appendTo("#r" + i);
+        $("<span>High: " + high + "&deg</span><br>").appendTo("#r" + i);
+        $("<span>Wind: " + windSpeed + " MPH</span><br><br>").appendTo("#r" + i);
+      }
+    })
 };
+
 //
-// function makeMarkers(lat, lng, name){
-//     var marker = new google.maps.Marker({
-//       position: {lat: lat, lng: lng},
-//       map: map,
-//       title: 'Hello World!'
-//   });
-//   markerMsg(marker, name);
-// };
+function makeMarkers(lat, lng){
+  var icon = {
+    url: "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/marker.png?alt=media&token=f07ed884-1ae9-457b-b01e-14ee14fd6842",
+    scaledSize: new google.maps.Size(20, 30), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor
+  };
+  var marker = new google.maps.Marker({
+    position: {lat: lat, lng: lng},
+    map: map,
+    icon: icon,
+    title: 'Hello World!'
+  });
+};
 //
 // function markerMsg(marker, message) {
 //   var infowindow = new google.maps.InfoWindow({
@@ -69,6 +94,10 @@ function getBaseData() {
         $("<p>" + data[i].description + " </p>").appendTo("#about");
         getWeather(data[i].lat, data[i].lng, data[i].id);
         getCFS(data[i].stationid, data[i].id);
+        initMap(data[i].lat, data[i].lng);
+        makeMarkers(data[i].lat, data[i].lng);
+        getDir(data[i].lat, data[i].lng)
+        console.log(data[i].lat, data[i].lng);
 
         break
       }
@@ -91,27 +120,57 @@ function getBaseData() {
   })
 };
 
-// var userLat;
-// var userLng;
-// var map;
-// function initMap(){
-//   var userInput = $("#destination").val();
-//   var geocoder = new google.maps.Geocoder();
-//   geocoder.geocode({ 'address' : userInput }, function(results, status) {
-//       userLat = [];
-//       userLng = [];
-//   if(status == "ZERO_RESULTS") {
-//     $("<h2 style='float: right'>Oops! Looks like you have a typo. Try again!</h2>").appendTo("#target");
-//   } else {
-//   userLat.push(results[0].geometry.location.lat());
-//   userLng.push(results[0].geometry.location.lng());
-//   map = new google.maps.Map(document.getElementById('map'), {
-//     center: {lat: userLat[0], lng: userLng[0]},
-//     zoom: 8
-//   });
-// }
-// })
-// };
+var map;
+function initMap(lat, lng){
+      map = new google.maps.Map(document.getElementById('mapper'), {
+        center: {lat: lat, lng: lng},
+        zoom: 14,
+        disableDefaultUI: true,
+        zoomControl: true
+      });
+      map.setOptions({styles: styles});
+};
+
+var styles = [
+  {"featureType":"administrative",
+    "elementType":"labels.text.fill",
+    "stylers":[{"color":"#444444"}]
+  },
+  {"featureType":"landscape",
+    "elementType":"all",
+    "stylers":[{"color":"#f5f5f5"}]
+  },
+  {"featureType":"poi",
+    "elementType":"all",
+    "stylers":[{"visibility":"off"}]
+  },
+  {"featureType":"road",
+    "elementType":"all",
+    "stylers":[{"saturation":-100},{"lightness":45}]
+  },
+  {"featureType":"road.highway",
+    "elementType":"all",
+    "stylers":[{"visibility":"simplified"}]
+  },
+  {"featureType":"road.arterial",
+    "elementType":"labels.icon",
+    "stylers":[{"visibility":"off"}]
+  },
+  {"featureType":"transit",
+    "elementType":"all",
+    "stylers":[{"visibility":"off"}]
+  },
+  {"featureType":"water",
+    "elementType":"all",
+    "stylers":[{"color":"#A4DDF5"}, {"visibility":"on"}]
+  }
+];
+
+
+
+function getDir(lat, lng){
+  $("<a href='https://www.google.com/maps/dir//" + lat + "," + lng + "' target='_blank'>Get Directions</a>").appendTo("#directions");
+}
 
 // $(window).bind("load", function () {
     getBaseData(  );
