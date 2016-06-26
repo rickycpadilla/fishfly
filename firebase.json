@@ -1,5 +1,9 @@
 {
   "hosting": {
     "public": "public"
-  }
+  },
+  "headers" : [ {
+      "key" : "Access-Control-Allow-Origin",
+      "value" : "*"
+    } ]
 }

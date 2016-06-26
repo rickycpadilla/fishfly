@@ -16,7 +16,10 @@ function getCFS(stationId, id){
 };
 
 function getWeather(lat, lng, id){
-  $.getJSON("https://api.forecast.io/forecast/67e7df6d2acc0806d8ecb50f3f040be8/" + lat + "," + lng, function(data){
+  $.ajax({
+    url: "https://api.forecast.io/forecast/67e7df6d2acc0806d8ecb50f3f040be8/" + lat + "," + lng,
+    dataType: 'jsonp',
+    success: function(data){
     console.log(data);
     if(data.currently.apparentTemperature){
       var weatherCond = data.currently.icon;
@@ -32,7 +35,7 @@ function getWeather(lat, lng, id){
       console.log(windSpeed);
       $("<span>Wind: " + windSpeed + "</span><br>").appendTo("#rightw" + id);
     };
-  });
+  }});
 };
 
 function makeMarkers(lat, lng, name, id, url){
