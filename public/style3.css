@@ -14,8 +14,7 @@ a {
   -o-background-size: cover;
   background-size: cover;
   height: 60vh;
-  width: 102%;
-  margin-left: -8px;
+  width: 100%;
   position: relative;
 }
 
@@ -69,6 +68,10 @@ h4 {
   right: 70px;*/
 }
 
+body{
+  margin: 0;
+}
+
 #rightside {
   position: absolute;
   bottom: 27px;
@@ -95,10 +98,10 @@ li {
 #horzline {
   display: block;
   height: 1px;
-  width: 103%;
+  width: 100%;
   border: 0;
   border-top: 1px solid #D6D6D6;
-  margin: 1em 0 0 -2em;
+  margin: 1em 0 0 0;
   padding: 0;
 }
 
@@ -207,7 +210,20 @@ form {
     #lefty {
       width: 98vw;
     }
-    #destination {
-      width: 150px;
+    #rightside {
+      /*needs updated*/
+      display: none;
+    }
+    #rightside2 {
+      /*needs updated*/
+      display: none;
+    }
+    #forecast{
+      width: 100%;
+      clear: both;
+    }
+    #info{
+      width: 100%;
+      margin: 4px;
     }
 }

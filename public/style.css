@@ -20,7 +20,7 @@ html {
 }
 
 #headline {
-  font-family: SFUIDisplay-Semibold;
+  font-family: SFUIDisplay-Semibold, sans-serif;;
   font-size: 54px;
   color: #FFFFFF;
   letter-spacing: 1.87px;
@@ -30,7 +30,7 @@ html {
 }
 
 #subline {
-  font-family: SFUIDisplay-Semibold;
+  font-family: SFUIDisplay-Semibold, sans-serif;;
   font-size: 16px;
   color: #FFFFFF;
   letter-spacing: 0.64px;
@@ -55,6 +55,8 @@ html {
   outline: none;
   border: none;
   margin-right: -2px;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 #button {
@@ -67,6 +69,8 @@ html {
   border: none;
   padding: 1px 30px 1px 20px;
   margin-left: -2px;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 #button:hover{
@@ -120,4 +124,14 @@ footer {
   padding: 10px;
   color: #D6D6D6;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  #usa{
+    width: 300px;
+  }
+  #headline {
+    font-size: 30px;
+    margin-top: 140px;
+  }
 }

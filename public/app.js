@@ -1,15 +1,8 @@
-// TO DO NEXT (as of Tuesday June 21):
-// 1. Sort results based on distance from user input.
-// 2. Stylize result list.
-// 3. Add specific, additional info for each result - either separate page or lightbox.
-// 4. Link markers to additional info as well.
-// 5. Finish stylizing home page and results page.
-
 function getCFS(stationId, id){
   $.getJSON("https://data.colorado.gov/resource/a97x-8zfv.json", function( data ){
     for (var i = 0; i < data.length; i++){
       if(data[i].usgs_station_id == stationId){
-        $("<span>Flow: " + data[i].amount + " CFS</span>").appendTo("#rightw" + id);
+        $("<span>Flow: " + data[i].amount + " CFS</span><br>").appendTo("#rightw" + id);
       }
     }
   } )
@@ -20,19 +13,15 @@ function getWeather(lat, lng, id){
     url: "https://api.forecast.io/forecast/67e7df6d2acc0806d8ecb50f3f040be8/" + lat + "," + lng,
     dataType: 'jsonp',
     success: function(data){
-    console.log(data);
     if(data.currently.apparentTemperature){
       var weatherCond = data.currently.icon;
-      console.log(weatherCond);
       var icon = $("<img src='images/icons/" + weatherCond + ".png' style='width: 35px; margin-right:5px' class='icon'/>");
       icon.appendTo("#leftw" + id);
       var currentTemp = data.currently.apparentTemperature.toFixed(0);
-      console.log(currentTemp);
       $("<span style='font-size: 36px;'>" + currentTemp + "&deg</span>").appendTo("#leftw" + id);
     }
     if(data.currently.windSpeed){
       var windSpeed = data.currently.windSpeed + " MPH";
-      console.log(windSpeed);
       $("<span>Wind: " + windSpeed + "</span><br>").appendTo("#rightw" + id);
     };
   }});
@@ -41,9 +30,9 @@ function getWeather(lat, lng, id){
 function makeMarkers(lat, lng, name, id, url){
   var icon = {
     url: "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/marker.png?alt=media&token=f07ed884-1ae9-457b-b01e-14ee14fd6842",
-    scaledSize: new google.maps.Size(20, 30), // scaled size
-    origin: new google.maps.Point(0,0), // origin
-    anchor: new google.maps.Point(0, 0) // anchor
+    scaledSize: new google.maps.Size(20, 30),
+    origin: new google.maps.Point(0,0),
+    anchor: new google.maps.Point(0, 0)
   };
     var marker = new google.maps.Marker({
       position: {lat: lat, lng: lng},
@@ -61,7 +50,6 @@ function markerMsg(marker, message, id) {
   });
   marker.addListener('mouseover', function() {
     infowindow.open(marker.get('map'), marker);
-    // $("#div" + id).css("opacity", "0.9");
     $(".card:not(#div"+ id +")").css("opacity", "0.4");
   });
   marker.addListener('mouseout', function() {
@@ -82,7 +70,6 @@ function markerMsg(marker, message, id) {
 
 function getBaseData() {
   $.getJSON( "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/spots.json?alt=media&token=85ba93cd-ec7a-4e13-9df3-cf4d4d2b921b", function(data){
-// adding distance comparisons
     for(var i=0; i<data.length; i++){
       var dist = distance(userLat, userLng, data[i].lat, data[i].lng);
       data[i]["dist"] = dist;
@@ -92,7 +79,6 @@ function getBaseData() {
       return a.dist - b.dist;
     });
 
-// Original function below
     for(var i = 0; i<data.length; i++){
       var detLink = "details.html?location=" + data[i].name+" "+data[i].loc
       $("<a href='" + detLink + "'><div id='div"+data[i].id+"' class='card'></div></a>").appendTo("#datapage");
