@@ -31,7 +31,7 @@ function getWeather(lat, lng, id){
   });
 };
 
-function makeMarkers(lat, lng, name, id){
+function makeMarkers(lat, lng, name, id, url){
   var icon = {
     url: "https://firebasestorage.googleapis.com/v0/b/fishfly-53334.appspot.com/o/marker.png?alt=media&token=f07ed884-1ae9-457b-b01e-14ee14fd6842",
     scaledSize: new google.maps.Size(20, 30), // scaled size
@@ -42,7 +42,8 @@ function makeMarkers(lat, lng, name, id){
       position: {lat: lat, lng: lng},
       map: map,
       icon: icon,
-      title: 'Hello World!'
+      title: 'Hello World!',
+      url: url
   });
   markerMsg(marker, name, id);
 };
@@ -60,8 +61,11 @@ function markerMsg(marker, message, id) {
     infowindow.close(marker.get('map'), marker);
     $(".card").css("opacity", "1");
   });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });
   $("#div" + id).hover(function(){
-    infowindow.open(marker.get('map'), marker)
+    infowindow.open(marker.get('map'), marker);
   },
   function(){
     infowindow.close(marker.get('map'), marker)
@@ -83,7 +87,8 @@ function getBaseData() {
 
 // Original function below
     for(var i = 0; i<data.length; i++){
-      $("<a href='details.html?location=" + data[i].name+" "+data[i].loc + "'><div id='div"+data[i].id+"' class='card'></div></a>").appendTo("#datapage");
+      var detLink = "details.html?location=" + data[i].name+" "+data[i].loc
+      $("<a href='" + detLink + "'><div id='div"+data[i].id+"' class='card'></div></a>").appendTo("#datapage");
       getWeather(data[i].lat, data[i].lng, data[i].id);
       getCFS(data[i].stationid, data[i].id);
       var imgCode = $("<img src='" + data[i].img + "' class='photo'/>");
@@ -94,7 +99,7 @@ function getBaseData() {
       $("<div style='float: right; width: 116px; font-size: 12px; font-weight: light; padding-top: 5px; margin-right:30px; text-align: right' id='rightw" + data[i].id + "'></div>").appendTo("#weath" + data[i].id);
       $("<h2 id='" + data[i].id +"'>" + data[i].name + " </h2>").appendTo("#div" +data[i].id);
       $("<h4 id='" + data[i].id +"'>" + data[i].loc + " </h4>").appendTo("#div" +data[i].id);
-      makeMarkers(data[i].lat, data[i].lng, data[i].name, data[i].id);
+      makeMarkers(data[i].lat, data[i].lng, data[i].name, data[i].id, detLink);
     }
   })
 };
